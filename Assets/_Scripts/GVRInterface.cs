@@ -53,7 +53,7 @@ public class GVRInterface : MonoBehaviour
         Debug.Log("Adding force: " + force);
         Vector3 dir = new Vector3(0, force * .2f, force);
         myRB.AddForce(dir);
-        // Debug.Log("GvrController.Orientation.eulerAngles");
+        Debug.Log("GvrController.Orientation.eulerAngles");
         myRB.AddTorque(GvrController.Accel, ForceMode.Force);
 
     }
